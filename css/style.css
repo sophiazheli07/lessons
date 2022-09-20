@@ -5,3 +5,32 @@
     list-style: none;
     text-decoration: none;
 }
+.wrap{
+    width: 100%;
+    background: lightgray;
+
+}
+.block1,.block2{
+    width: 100px;
+    height: 100px;
+    background: red;
+    /* float: left; */
+}
+.block1{
+    float: left;
+}
+.block2{
+    float: right;
+    margin-right: 50px;
+}
+/* .text{
+    margin-left: 20px;
+} */
+.test-block{
+    width: 200px;
+    height: 200px;
+    background: yellow;
+}
+.clear{
+    clear: both;
+}
