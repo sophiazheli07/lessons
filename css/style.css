@@ -5,3 +5,24 @@
     list-style: none;
     text-decoration: none;
 }
+.box{
+    height: 700px;
+    /* background-image: url("../images/1.png"); */
+    /* background-size: cover; */
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+    /* background-size: 50%; */
+    /* background-size: 500px;
+    background-color: #000; */
+    /* background-position: center bottom; */
+    /* background-position: 200px 10%; */
+    /* background-position-x: ;
+    background-position: left ;
+    background-repeat: repeat-x; */
+    /* background-position-y: ; */
+    background: 
+    url("../images/2.jpg") no-repeat center right/50%,
+    url("../images/1.png") no-repeat center left/30%,
+    #000 ;
+
+}
