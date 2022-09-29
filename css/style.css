@@ -86,7 +86,7 @@ align-self: start;
     bottom: -10px;
     left: 0;
 }
-.menu-item.ctive .menu-link{
+.menu-item.active .menu-link{
 color: #000;
 
 }
@@ -132,8 +132,136 @@ color: #000;
 }
 .head-section .container{
     padding-top: 1px;
-    background: url('../images/pose_7.jpg');
+    background: url('../images/Hero\ 3D.png');
     background-size: contain;
     background-position: 110% top;
     background-repeat: no-repeat;
+}
+.test{
+    width: 500px;
+    height: 500px;
+    padding-top: 190px;
+    display: inline-block;
+}
+.test2{
+    height: 600px;
+    width: 600px;
+    background: #000;
+    display: inline-block;
+}
+#bottom-btn{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #E7E7E7;
+    margin-left: 40px;
+    vertical-align: bottom;
+    background: url('../images/arrow-down.svg') no-repeat center;
+    background-size: 50%;
+    cursor: pointer;
+}
+.logo-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.row-reverse{
+    flex-direction: row-reverse;
+}
+.subscription-section{
+    padding: 89px 0 55px;
+}
+.info-wrap{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.info-img img{
+    width: 348px;
+
+
+}
+.description-header h2{
+    font-size: 50px;
+    font-weight: 700;
+    color: #19191B;
+    margin-bottom: 30px;
+
+}
+.description p{
+    font-size: 20px;
+    color: #696871;
+}
+.description-link a{
+    color: #5454D4;
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 30px;
+    display: block;
+}
+.info-description{
+    width: 460px;
+}
+.metrix-section{
+    padding: 30ox 0;
+}
+.services-item{
+    width: 307px;
+    float: left;
+    text-align: center;
+    margin-right: 49px;
+}
+.services-header{
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.services-header h3{
+    font-size: 24px;
+}
+.services-description p{
+    color: #696871;
+    font-size: 16px;
+}
+.services-section{
+    margin-top: 159px;
+}
+.plan-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.clear{
+    clear: both;
+}
+.plan-header{
+    font-size: 60px;
+}
+.plan-section{
+    padding: 150px 0;
+}
+.switch-btn{
+    padding: 5px 6px;
+    background: #F7F7FB;
+    border-radius: 10px;
+    font-size: 0;
+}
+.switch-btn .btn{
+    padding: 17px 56px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+
+}
+.yearly-btn{
+    border-radius: 10px 0 0 10px;
+}
+.monthly-btn{
+    border-radius: 0 10px 10px 0;
+}
+.switch-btn .btn.active{
+    background: #5454D4;
+    color: #fff;
 }
