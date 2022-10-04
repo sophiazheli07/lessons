@@ -4,4 +4,85 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+
+}
+/* .wrap{
+    background: lightcoral;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; */
+    /* width: 50vw; */
+    /* height: 50vh; */
+
+/* }
+.item{ */
+    /* height: 100px; */
+    /* width: calc(100% - 20px); */
+    /* width: 100vw;
+    max-width: 200px;
+    background: #000;
+    margin: 10px;
+    color: red;
+    min-height: 200px;
+
+} */
+
+
+.main{
+    padding: 15px;
+}
+header{
+    padding: 20px;
+    background: gray;
+    border-radius: 10px;
+    text-align: center;
+}
+nav{
+    margin-top: 10px;
+    padding: 30px;
+    background: lightgreen;
+    border-radius: 10px;
+    text-align: center;
+}
+.wrap{
+    display: flex;
+}
+aside{
+    width: 20%;
+    text-align: center;
+    background: orange;
+    margin-right: 10px;
+}
+.content{
+    width: 50%;
+    background: orangered;
+
+}
+.side-menu{
+    width: 30%;
+}
+.content h1{
+    padding: 30px;
+
+}
+.content-text{
+    background: lightgray;
+    text-align: left;
+    padding: 15px;
+
+
+}
+.content-text img{
+    width: 150px;
+    float: left;
+}
+.wrap{
+    display: flex;
+    margin-top: 10px;
+}
+.side-menu{
+    width: 30%;
+    background: green;
+    margin-left: 10px;
+    text-align: center;
 }
