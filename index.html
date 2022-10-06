@@ -4,10 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson</title>
+    <title>SVG</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+
+    <svg class="svg">
+
+
+        <defs>
+            <linearGradient id="gradient" x1="0" y1="0" x2="60%" y2="60%" >
+                <stop offset="0" stop-color="yellow"></stop>
+                <stop offset="100" stop-color="black"></stop>
+            </linearGradient>
+        </defs>
+
+
+        <circle r="50" cx="200" cy="100" fill="teal" stroke-width="5" stroke="pink"></circle>
+        <circle r="50" cx="100" cy="100" fill="teal" stroke-width="5" stroke="pink"></circle>
+        <rect x="10" y="180" width="200" height="100" ry="50" rx="50" fill="url(#gradient)"></rect>
+        <line x1="450" x2="550" y1="100" y2="200" stroke-width="5" stroke="pink"></line>
+        <!-- <polyline points="100,200 170,250 500,157" stroke-width="5" stroke="pink"></polyline> -->
+        <polygon points="100,200 170,250 500,157" stroke-width="5" stroke="pink" fill="url(#gradient)"></polygon>
+    </svg>
     
 </body>
 </html>
