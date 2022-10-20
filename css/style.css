@@ -1,7 +1,139 @@
-*,body,html{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
+@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap");
+*, body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
+
+.wrap-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap-starter {
+  text-align: center;
+}
+.wrap-starter .free-card {
+  padding-top: 34px;
+  width: 330px;
+  height: 441px;
+  background: #F8F8F8;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+.wrap-starter p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #696871;
+  margin-top: 34px;
+}
+.wrap-starter .start {
+  margin-bottom: 22px;
+}
+.wrap-starter h1 {
+  font-size: 60px;
+  font-weight: 700px;
+  color: #000;
+}
+.wrap-starter .btn {
+  width: 285px;
+  height: 60px;
+  border-radius: 10px;
+  background: #fff;
+  margin-left: 24px;
+  margin-top: 25px;
+  padding-top: 19px;
+  margin-left: 24px;
+}
+.wrap-starter a {
+  font-size: 17px;
+  font-weight: 700;
+  text-align: center;
+  color: #5454D4;
+}
+
+.wrap-premium {
+  text-align: center;
+}
+.wrap-premium .premium-card {
+  padding-top: 34px;
+  width: 376px;
+  height: 473px;
+  background: #FF7143;
+  border-radius: 10px;
+  margin-left: 18px;
+  margin-top: 50px;
+}
+.wrap-premium p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  margin-top: 34px;
+}
+.wrap-premium h1 {
+  font-size: 60px;
+  font-weight: 700px;
+  color: #fff;
+}
+.wrap-premium .btn {
+  width: 285px;
+  height: 60px;
+  border-radius: 10px;
+  background: #9F3919;
+  margin-left: 24px;
+  margin-top: 25px;
+  padding-top: 19px;
+  margin-left: 40px;
+}
+.wrap-premium a {
+  font-size: 17px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+}
+
+.wrap-enter {
+  text-align: center;
+}
+.wrap-enter .enter-card {
+  padding-top: 34px;
+  width: 330px;
+  height: 441px;
+  background: #F8F8F8;
+  border-radius: 10px;
+  margin-left: 15px;
+  margin-top: 50px;
+}
+.wrap-enter p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #696871;
+  margin-top: 34px;
+}
+.wrap-enter .start {
+  margin-bottom: 22px;
+}
+.wrap-enter h1 {
+  font-size: 60px;
+  font-weight: 700px;
+  color: #000;
+}
+.wrap-enter .btn {
+  width: 285px;
+  height: 60px;
+  border-radius: 10px;
+  background: #fff;
+  margin-left: 24px;
+  margin-top: 25px;
+  padding-top: 19px;
+  margin-left: 24px;
+}
+.wrap-enter a {
+  font-size: 17px;
+  font-weight: 700;
+  text-align: center;
+  color: #5454D4;
+}/*# sourceMappingURL=style.css.map */
