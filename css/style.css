@@ -114,4 +114,57 @@ header {
   padding: 15px 45px;
   border-radius: 100px;
   background: #F1CDB3;
+}
+
+.about-section {
+  padding: 94px 0 100px;
+}
+
+.section-header h2 {
+  font-size: 35px;
+  color: #545454;
+  font-weight: 400;
+  font-family: "Georgia", sans-serif;
+}
+
+.about-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about-wrap-image, .about-wrap-description {
+  flex-basis: 50%;
+}
+.about-wrap-image {
+  text-align: center;
+}
+.about-wrap-image img {
+  width: 60%;
+}
+.about-wrap-description p {
+  margin-top: 25px;
+  font-size: 15px;
+  color: #4c4c4c;
+  font-weight: 400;
+  font-family: "Arial", sans-serif;
+  line-height: 160%;
+}
+
+.help-section {
+  padding: 80px 0 100px;
+}
+.help-section .help-header {
+  text-align: center;
+}
+
+.shelter-wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.shelter-wrap__item {
+  text-align: center;
+  margin-top: 55px;
+  flex-basis: 20%;
 }/*# sourceMappingURL=style.css.map */

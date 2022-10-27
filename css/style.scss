@@ -96,4 +96,53 @@ header{
         border-radius: 100px;
         background: $primary-color;
     }
+}      
+.about-section{
+    padding: 94px 0 100px;
+    
+}
+.section-header{
+    h2{
+        @include font(35px,$light-gray,400,$georgia)
+    }
+}
+.about{
+    &-wrap{
+        @include fc();
+        &-image,&-description{
+            flex-basis: 50%;
+            // width: 50%;
+        }
+        &-image{
+            text-align: center;
+            img{
+                width: 60%;
+            }
+        }
+
+        &-description{
+            p{
+                margin-top: 25px;
+                @include font(15px,$color4,400,$arial);
+                line-height:160%;
+            }
+            
+        }
+    }
+    
+
+}
+.help-section{
+    padding: 80px 0 100px;
+    .help-header{
+        text-align: center;
+    }
+}
+.shelter-wrap{
+    @include fa();
+    &__item{
+        text-align: center;
+        margin-top: 55px;
+        flex-basis: 20%;
+    }
 }
