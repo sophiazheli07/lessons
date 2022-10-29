@@ -1,6 +1,5 @@
 @import 'variables';
 @import 'mixins';
-
 *,body,html{
     margin: 0;
     padding: 0;
@@ -15,28 +14,31 @@
 }
 .header-section{
     padding-top: 60px;
-    background: linear-gradient(0deg,#211F20, #211F20),
-    radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+    background: linear-gradient(0deg, #211F20, #211F20),
+    radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%) ;
 }
 header{
     @include fb();
 }
 .logo{
     .main-logo{
-        @include font(32px,$primary-color,400,$georgia)
+        @include font(32px,$primary-color,400,$georgia);
     }
     .sub-logo{
         margin-top: 10px;
-        @include font(13px,$white,400,$arial)
+        @include font(13px,$white,400,$arial);
     }
 }
 .menu{
     &-burger{
         display: none;
+        transition: 1s ease-in-out;
+        z-index: 100;
         div{
             width: 30px;
             height: 2px;
             background: $primary-color;
+            transition: 1s ease-in-out;
             &:nth-child(2){
                 margin: 10px 0;
             }
@@ -55,11 +57,14 @@ header{
             @include pseudo(100%,3px);
             background: $primary-color;
             bottom: -10px;
-            left: 0px;
+            left: 0;
         }
     }
     &-link{
         @include font(15px,$cd-color,400,$arial)
+    }
+    &-list{
+        transition: 1s ease-in-out;
     }
 }
 .main{
@@ -79,6 +84,7 @@ header{
             margin: 42px 0;
             p{
                 @include font(15px,$cd-color,400,$arial);
+                line-height: 160%;
             }
         }
     }
@@ -95,23 +101,20 @@ header{
         padding: 15px 45px;
         border-radius: 100px;
         background: $primary-color;
+        display: inline-block;
     }
-}      
-.about-section{
-    padding: 94px 0 100px;
-    
 }
 .section-header{
-    h2{
-        @include font(35px,$light-gray,400,$georgia)
-    }
+    @include font(35px,$light-gray,400,$georgia)
+}
+.about-section{
+    padding: 94px 0 100px;
 }
 .about{
     &-wrap{
         @include fc();
         &-image,&-description{
             flex-basis: 50%;
-            // width: 50%;
         }
         &-image{
             text-align: center;
@@ -119,18 +122,15 @@ header{
                 width: 60%;
             }
         }
-
         &-description{
             p{
                 margin-top: 25px;
                 @include font(15px,$color4,400,$arial);
-                line-height:160%;
+                line-height: 160%;
+                padding-right: 50px;
             }
-            
         }
     }
-    
-
 }
 .help-section{
     padding: 80px 0 100px;
@@ -139,10 +139,167 @@ header{
     }
 }
 .shelter-wrap{
+    @include font(20px,$light-gray,400,$georgia);
     @include fa();
     &__item{
         text-align: center;
-        margin-top: 55px;
-        flex-basis: 20%;
+        margin-top: 85px;
+        width: 201px;
+
+    }
+}
+.pets-section{
+    padding: 80px 0 100px;
+    background: #F6F6F6;
+}
+.pets-header{
+    h2{
+        text-align: center;
+    }
+}
+.pets{
+    margin-top: 60px;
+    padding: 0 105px;
+    position: relative;
+    &-item{
+        width: 270px;
+        // background: #fafafa;
+        background: #fafafa;
+        border-radius: 9px;
+        padding-bottom: 30px;
+        margin: auto;
+        &__name{
+            margin-top: 30px;
+            p{
+                @include font(20px,$light-gray,400,$georgia);
+                text-align: center;
+            }
+        }
+        .btn{
+            text-align: center;
+            margin-top: 30px;
+            a{
+                background: none;
+                border: 2px solid $primary-color;
+            }
+        }
+
+    }
+}
+.slick-prev,.slick-next{
+    position: absolute;
+    top: 50%;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    transform: translate(-50%);
+    border: none;
+}
+.slick-prev{
+    left: 0;
+}
+.slick-next{
+    right: 0;
+
+}
+.slick-prev::after,.slick-next::before{
+    @include pseudo(52px,52px);
+    border-radius: 50%;
+    border: 2px solid $primary-color;
+    background: url('../images/arrow.png') no-repeat center;
+    background-size: 14px;
+    cursor: pointer;
+}
+.slick-next::before{
+    transform:translate(-100%) rotate(180deg);
+}
+.donation{
+    background: #F6F6F6;
+    &-image{
+        img{
+            width: 90%;
+        }
+    }
+    .card-details{
+        @include font(15px,$light-gray,400,$georgia)
+    }
+    .donation-card{
+        
+        background: $primary-color;
+        border-radius: 9px;
+        line-height: 23px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        max-width: 349px;
+        margin-top: 20px;
+        p{
+            @include font(20px,$light-gray,400,$georgia);
+            margin: -25px;
+        }
+    
+        .credit-img{
+            margin-right: 45px;
+            
+        }
+        .credit-card{
+            @include fc();
+        }
+
+    }
+
+}
+.donation-info{
+    @include font(12px,#B2B2B2,400,$arial);
+    font-style: italic;
+}
+
+.main-footer-wrap{
+    @include fa();
+}
+
+.footer-section{
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%);
+}
+
+.footer-list{
+    @include fa();
+}
+.questions-suggestions{
+    h2{
+        @include font(35px,$white,400,$georgia);
+        margin-bottom: 45px;
+    }
+    .contact{
+        margin-bottom: 49px;
+        @include fc();
+        justify-content: left;
+        img{
+            margin-right: 20px;
+        }
+        p{
+           @include font(20px,$primary-color,400,$georgia)
+        }
+    }
+}
+.location{
+    margin-left: 160px;
+    h2{
+        @include font(35px,$white,400,$georgia);
+        margin-bottom: 45px;
+    }
+    
+    .location-info{
+        margin-bottom: 49px;
+        @include fc();
+        justify-content: left;
+        img{
+            margin-right: 20px;
+        }
+        p{
+           @include font(20px,$primary-color,400,$georgia)
+        }
     }
 }
