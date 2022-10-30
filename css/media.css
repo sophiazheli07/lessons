@@ -74,6 +74,9 @@
     .about-wrap-image img{
         width: 300px;
     }
+    .pets-header-nav .menu-burger{
+        display: none;
+    }
 }
 
 
@@ -172,12 +175,27 @@
     .donation-card .credit-card img{
         margin-left: -15px;
     }
+    .scroll-section{
+        margin-top: 42px;
+
+    }
+    .first-page-arrow,.previous-page-arrow,.current-page-arrow,.next-page-arrow,.last-page-arrow{
+        margin-right: 3px;
+    }
+    .container{
+        padding: 0 10px;
+    }
 
 }
 @media screen and (max-width: 300px){
     .donation-card .credit-card p{
         font-size: 13px;
     }
+    .friends-section{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
 }
 @media screen and (max-width: 670px){
     .footer-list{
@@ -190,10 +208,26 @@
     .footer-list{
         width: 100%;
     }
+    .footer-img{
+        margin-left: -10px;
+    }
+
 }
 
 @media screen and (max-width: 750px){
     .location{
         margin: auto;
+    }
+}
+@media screen and (max-width: 730px){
+    .header-menu-list{
+        display: none;
+    }
+    .pets-header-nav .menu-burger{
+        display: block;
+        margin-top: 51px;
+    }
+    .pets-header-nav .menu-burger .div{
+        background: #000;
     }
 }

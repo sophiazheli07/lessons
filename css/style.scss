@@ -17,7 +17,7 @@
     background: linear-gradient(0deg, #211F20, #211F20),
     radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%) ;
 }
-header{
+.header-main{
     @include fb();
 }
 .logo{
@@ -103,6 +103,16 @@ header{
         background: $primary-color;
         display: inline-block;
     }
+}
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    margin-left: 50px;
 }
 .section-header{
     @include font(35px,$light-gray,400,$georgia)
@@ -266,6 +276,12 @@ header{
 
 .footer-list{
     @include fa();
+    .footer-img{
+        img{
+            max-width: 100%;
+        }
+
+    }
 }
 .questions-suggestions{
     h2{
@@ -302,4 +318,103 @@ header{
            @include font(20px,$primary-color,400,$georgia)
         }
     }
+}
+
+
+.pets-header{
+    padding-left: 40px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+}
+
+.pets-main-wrap{
+    @include fb();
+    .pets-logo{
+        margin-top: 30px;
+        .main-pets-logo{
+            @include font(32px,$light-gray,400,$georgia);
+            margin-top: 10px;
+        }
+        .sub-pets-logo{
+            @include font(13px,$dark-color,400,$arial)
+        }
+    }
+}
+
+
+// PSEUDO IS NOT DISPLAYING ??? 
+.header-menu-list{
+    @include fb();
+    margin-top: 46px;
+    .header-menu-item{
+        margin-right: 35px;
+        a{
+            @include font(15px,$dark-color,400,$arial)
+        }
+    }
+    .header-menu-item .active{
+        position: relative;
+        .header-menu-item::before{
+            @include pseudo(100%,3px);
+            background: $primary-color;
+        }
+}
+}
+.friends-section{
+    background: #F6F6F6;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+.friends-grid{
+    @include fb()
+}
+
+.friends-section-header{
+    @include fc();
+    text-align: center;
+    @include font(35px,$dark-color,400,$georgia);
+
+}
+.friends{
+    margin-top: 30px;
+}
+.scroll-section{
+    @include fc();
+    margin-top: 60px;
+
+}
+.first-page-arrow,.previous-page-arrow,.current-page-arrow,.next-page-arrow,.last-page-arrow{
+    border-radius: 50%;
+    border: 2px solid $cd-color;
+    width: 52px;
+    height: 52px;
+    background: url('') no-repeat center;
+    background-size: 40px; 
+    cursor: pointer;
+    margin-right: 20px;
+}
+.first-page-arrow{
+    background: url('../images/__.png') no-repeat center;
+}
+.previous-page-arrow{
+    background: url('../images/_.png') no-repeat center;
+}
+.current-page-arrow{
+    text-align: center;
+    padding-top: 12px;
+    a{
+        @include font(20px,$dark-color,400,$georgia);
+        
+    }
+    border: none;
+    background: $primary-color;
+    
+}
+.next-page-arrow{
+    background: url('../images/right.png') no-repeat center;
+    border: 2px solid $primary-color;
+}
+.last-page-arrow{
+    background: url('../images/right(2).png') no-repeat center;
+    border: 2px solid $primary-color;
 }
