@@ -77,6 +77,9 @@
     .pets-header-nav .menu-burger{
         display: none;
     }
+    .footer-list .location{
+        margin-left: 61px;
+    }
 }
 
 
@@ -210,6 +213,9 @@
     }
     .footer-img{
         margin-left: -10px;
+    }
+    .footer-list .location{
+        margin-left:auto;
     }
 
 }
